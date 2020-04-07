@@ -4,9 +4,9 @@ All URIs are relative to *http://localhost:8086*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**Ping**](FEDApi.md#Ping) | **Get** /ping | Ping the FED service to check if running
-[**SearchFEDACH**](FEDApi.md#SearchFEDACH) | **Get** /fed/ach/search | Search FEDACH names and metadata
-[**SearchFEDWIRE**](FEDApi.md#SearchFEDWIRE) | **Get** /fed/wire/search | Search FEDWIRE names and metadata
+[**Ping**](FEDApi.md#Ping) | **Get** /ping | Ping FED
+[**SearchFEDACH**](FEDApi.md#SearchFEDACH) | **Get** /fed/ach/search | Search ACH
+[**SearchFEDWIRE**](FEDApi.md#SearchFEDWIRE) | **Get** /fed/wire/search | Search WIRE
 
 
 
@@ -14,7 +14,9 @@ Method | HTTP request | Description
 
 > Ping(ctx, )
 
-Ping the FED service to check if running
+Ping FED
+
+Check the service to check if running
 
 ### Required Parameters
 
@@ -42,7 +44,9 @@ No authorization required
 
 > AchDictionary SearchFEDACH(ctx, optional)
 
-Search FEDACH names and metadata
+Search ACH
+
+Search the FEDACH names and metadata with the provided query parameters
 
 ### Required Parameters
 
@@ -90,7 +94,9 @@ No authorization required
 
 > WireDictionary SearchFEDWIRE(ctx, optional)
 
-Search FEDWIRE names and metadata
+Search WIRE
+
+Search the FEDWIRE names and metadata with the provided query parameters
 
 ### Required Parameters
 

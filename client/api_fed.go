@@ -26,7 +26,8 @@ var (
 type FEDApiService service
 
 /*
-Ping Ping the FED service to check if running
+Ping Ping FED
+Check the service to check if running
  * @param ctx _context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
 */
 func (a *FEDApiService) Ping(ctx _context.Context) (*_nethttp.Response, error) {
@@ -102,7 +103,8 @@ type SearchFEDACHOpts struct {
 }
 
 /*
-SearchFEDACH Search FEDACH names and metadata
+SearchFEDACH Search ACH
+Search the FEDACH names and metadata with the provided query parameters
  * @param ctx _context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *SearchFEDACHOpts - Optional Parameters:
  * @param "XRequestID" (optional.String) -  Optional Request ID allows application developer to trace requests through the systems logs
@@ -241,7 +243,8 @@ type SearchFEDWIREOpts struct {
 }
 
 /*
-SearchFEDWIRE Search FEDWIRE names and metadata
+SearchFEDWIRE Search WIRE
+Search the FEDWIRE names and metadata with the provided query parameters
  * @param ctx _context.Context - for authentication, logging, cancellation, deadlines, tracing, etc. Passed from http.Request or context.Background().
  * @param optional nil or *SearchFEDWIREOpts - Optional Parameters:
  * @param "XRequestID" (optional.String) -  Optional Request ID allows application developer to trace requests through the systems logs

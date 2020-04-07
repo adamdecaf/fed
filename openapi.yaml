@@ -18,9 +18,9 @@ tags:
 paths:
   /ping:
     get:
-      tags:
-        - FED
-      summary: Ping the FED service to check if running
+      tags: [FED]
+      summary: Ping FED
+      description: Check the service to check if running
       operationId: ping
       responses:
         '200':
@@ -30,9 +30,9 @@ paths:
               example: PONG
   /fed/ach/search:
     get:
-      tags:
-        - FED
-      summary: Search FEDACH names and metadata
+      tags: [FED]
+      summary: Search ACH
+      description: Search the FEDACH names and metadata with the provided query parameters
       operationId: searchFEDACH
       parameters:
         - name: X-Request-ID
@@ -99,9 +99,9 @@ paths:
           description: Internal error, check error(s) and report the issue.
   /fed/wire/search:
     get:
-      tags:
-        - FED
-      summary: Search FEDWIRE names and metadata
+      tags: [FED]
+      summary: Search WIRE
+      description: Search the FEDWIRE names and metadata with the provided query parameters
       operationId: searchFEDWIRE
       parameters:
         - name: X-Request-ID

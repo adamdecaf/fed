@@ -33,9 +33,9 @@ All URIs are relative to *http://localhost:8086*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*FEDApi* | [**Ping**](docs/FEDApi.md#ping) | **Get** /ping | Ping the FED service to check if running
-*FEDApi* | [**SearchFEDACH**](docs/FEDApi.md#searchfedach) | **Get** /fed/ach/search | Search FEDACH names and metadata
-*FEDApi* | [**SearchFEDWIRE**](docs/FEDApi.md#searchfedwire) | **Get** /fed/wire/search | Search FEDWIRE names and metadata
+*FEDApi* | [**Ping**](docs/FEDApi.md#ping) | **Get** /ping | Ping FED
+*FEDApi* | [**SearchFEDACH**](docs/FEDApi.md#searchfedach) | **Get** /fed/ach/search | Search ACH
+*FEDApi* | [**SearchFEDWIRE**](docs/FEDApi.md#searchfedwire) | **Get** /fed/wire/search | Search WIRE
 
 
 ## Documentation For Models
